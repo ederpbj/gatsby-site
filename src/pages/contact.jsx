@@ -1,14 +1,16 @@
 import React from 'react';
+    import Menu from '../components/Menu';
 
-const About = () => (
-    const text =  'meu texto'
+const Contact = () => {
+        const text =  'meu texto Contact';
 
-    return(
-        <>
-            <h1>About</h1>
-            <h2>{text}</h2>
-        </>
-    )
-)
+        return(
+            <>
+                <Menu />
+                <h1>Contact</h1>
+                <h2>{text}</h2>
+            </>
+        )
+    }
 
-export default About
+export default Contact
