@@ -1,8 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
-
 import "./layout.scss"
+import Menu from '../Menu'
+
+
 
 const Layout = ({ children }) => {
   /* Graphql
@@ -18,7 +20,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    Header
+      <Menu />
+      Header
       <main>{children}</main>
       Footer
     </>
