@@ -3,11 +3,17 @@ import {Dropdown} from "react-bootstrap";
 
 //import cardStyles from "./card.module.scss";
 
+import * as Styled from './styled';
+
 const CardV2 = (props) => {
     return (
         //<div class="card" style={{width: "18rem;"}}> 
         //<a href="#" class="btn btn-primary">Go somewhere</a>
-        <div className="card" > 
+        <Styled.CardV2Wrapper 
+            className="card" 
+            background={props.backgroundCard} 
+            primary={props.styledDefault}
+            > 
             <div className="card-body">
                 <h5 className="card-title">{props.titleCard}</h5>
                 <p className="card-text text-gatsby">{props.textCard}</p>
@@ -24,7 +30,7 @@ const CardV2 = (props) => {
                     </Dropdown.Menu>
                 </Dropdown>
             </div>
-        </div>
+        </Styled.CardV2Wrapper>
     )
 }
 

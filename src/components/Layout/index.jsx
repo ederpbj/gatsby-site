@@ -3,8 +3,7 @@ import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
 import "./layout.scss"
 import Menu from '../Menu'
-
-
+import GlobalStyles from '../../styles/globalStyled'
 
 const Layout = ({ children }) => {
   /* Graphql
@@ -20,6 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles />
       <Menu />
       Header
       <main>{children}</main>
