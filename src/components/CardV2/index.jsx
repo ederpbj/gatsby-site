@@ -4,6 +4,7 @@ import {Dropdown} from "react-bootstrap";
 //import cardStyles from "./card.module.scss";
 
 import * as Styled from './styled';
+import Images from '../Images';
 
 const CardV2 = (props) => {
     return (
@@ -14,6 +15,7 @@ const CardV2 = (props) => {
             background={props.backgroundCard} 
             primary={props.styledDefault}
             > 
+                <Images name={props.nameImage} />
             <div className="card-body">
                 <h5 className="card-title">{props.titleCard}</h5>
                 <p className="card-text text-gatsby">{props.textCard}</p>
