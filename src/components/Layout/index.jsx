@@ -4,10 +4,11 @@ import PropTypes from "prop-types"
 import "./layout.scss"
 import Menu from '../Menu'
 import GlobalStyles from '../../styles/globalStyled'
+import Footer from '../Footer';
 
 const Layout = ({ children }) => {
-  /* Graphql
-  const data = useStaticQuery(graphql`
+  //Graphql
+ /*  const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
       <Menu />
       Header
       <main>{children}</main>
-      Footer
+      <Footer />
     </>
   )
 }
