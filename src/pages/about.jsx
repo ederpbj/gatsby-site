@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import CardV2 from '../components/CardV2';
+import SEO from "../components/seo";
 
 
 const About = () => {
@@ -9,6 +10,10 @@ const About = () => {
 
         return(
             <Layout>
+            <SEO 
+                title="About"
+                lang="uk"
+            />
                 <div className="container">
                     <div className="row">
                         <div className="col-12 py-4">
